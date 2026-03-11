@@ -1,0 +1,182 @@
+/* Reset básico */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:white;
+  color:#111;
+}
+
+/* HEADER y NAV */
+header{
+  border-bottom:3px solid #111;
+  padding:20px;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav ul{
+  display:flex;
+  gap:30px;
+  list-style:none;
+}
+
+nav a{
+  text-decoration:none;
+  color:#111;
+  font-weight:bold;
+}
+
+/* HERO PORTADA */
+.hero{
+  position:relative;
+  height:95vh;
+  overflow:hidden;
+}
+
+.hero-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.hero-text{
+  position:absolute;
+  top:50%;
+  left:10%;
+  transform:translateY(-50%);
+  color:white;
+}
+
+.hero h1{
+  font-family:'Anton', sans-serif;
+  font-size:100px;
+  line-height:140px;
+}
+
+.hero h1.fluor{
+  color:#39FF14;
+  text-shadow: 2px 2px #000;
+}
+
+.hero p{
+  font-size:25px;
+  margin-top:30px;
+  color:#ffffff;
+}
+
+/* SECCIÓN HISTORIA */
+.historia{
+  background-color:#111;
+  color:white;
+  padding:120px 10%;
+}
+
+.historia h2{
+  font-family:'Playfair Display', serif;
+  font-size:40px;
+  margin-bottom:30px;
+  color:#FF69B4;
+  text-align:center;
+}
+
+.historia-texto p{
+  font-size:20px;
+  line-height:2;
+  text-align:justify; /* justificado */
+  max-width:900px;
+  margin:0 auto;
+}
+
+/* TITULO REFERENTES */
+.titulo-seccion{
+  font-family:'Anton', sans-serif;
+  font-size:55px;
+  text-align:center;
+  margin:80px 0 50px 0;
+  color:#FF1493; /* rosa vibrante */
+  text-transform: uppercase;
+  letter-spacing:2px;
+}
+
+.titulo-seccion::after{
+  content:"";
+  display:block;
+  width:100px;
+  height:4px;
+  background-color:#FF1493;
+  margin:15px auto 0 auto;
+  border-radius:2px;
+}
+
+/* SECCIÓN REFERENTES */
+.fotografo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:100px;
+}
+
+.foto-principal img{
+  width:100%;
+  max-width:400px;
+  height:auto;
+  margin-bottom:25px;
+  border:none;
+}
+
+.descripcion h3{
+  font-family:'Playfair Display', serif;
+  font-size:32px;
+  margin-bottom:20px;
+  text-align:center;
+  color:#FF69B4;
+}
+
+.descripcion p{
+  font-size:18px;
+  margin-bottom:25px;
+  line-height:1.8;
+  text-align:justify; /* justificado */
+  max-width:850px;
+}
+
+/* Trabajos de cada fotógrafo */
+.trabajos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  background-color:#f5f5f5;
+  padding:20px;
+  border-radius:10px;
+}
+
+.trabajos img{
+  width:250px;
+  height:auto;
+  object-fit:contain;
+  border:none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.trabajos img:hover{
+  transform:scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+footer{
+  padding:40px;
+  text-align:center;
+  background:#111;
+  color:white;
+}

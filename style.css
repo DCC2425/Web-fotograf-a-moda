@@ -76,6 +76,7 @@ nav a{
   font-size: clamp(16px, 2vw, 25px); /* adaptable */
   margin-top:1rem;
   color:#ffffff;
+  
 }
 
 /* SECCIÓN HISTORIA */
@@ -95,7 +96,7 @@ nav a{
 
 .historia-texto p{
   font-size:20px;
-  line-height:2;
+  line-height:1.4;
   text-align:justify;
   max-width:900px;
   margin:0 auto;
@@ -142,16 +143,20 @@ nav a{
   font-family:'Playfair Display', serif;
   font-size:32px;
   margin-bottom:20px;
-  text-align:center;
+  text-align:left;
   color:#FF69B4;
+  margin: 5px 10px;
+
+  
 }
 
 .descripcion p{
   font-size:18px;
   margin-bottom:25px;
-  line-height:1.8;
-  text-align:justify;
+  line-height:1.4;
+  text-align:left;
   max-width:850px;
+  margin: 0 10px;
 }
 
 /* Trabajos de cada fotógrafo */
